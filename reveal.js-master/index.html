@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>RS Clone (monopoly)</h2>
+        </section>
+        <section>
+          <h3>Team</h3>
+          <div style="display: flex; justify-content: space-around">
+            <div
+              class="fragment"
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <img
+                src="./assets/nike.jpg"
+                alt="nike93"
+                style="border-radius: 50%; max-width: 200px"
+              />
+              <span>Nikita</span>
+              <span>@nike93</span>
+              <span>Front-end</span>
+            </div>
+
+            <div
+              class="fragment"
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <img src="./assets/top.jpg" alt="top" style="border-radius: 50%; max-width: 200px" />
+              <span>Aleksei</span>
+              <span>@top-aleksei</span>
+              <span>Front-end</span>
+              <span>Team lead</span>
+            </div>
+
+            <div
+              class="fragment"
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <img
+                src="./assets/poznerrr.jpg"
+                alt="poznerrr"
+                style="border-radius: 50%; max-width: 200px"
+              />
+              <span>Artur</span>
+              <span>@poznerrr</span>
+              <span>Back-end</span>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h3>What to clone?</h3>
+          <img class="fragment" src="./assets/ideas.png" alt="task ideas" />
+        </section>
+        <section>
+          <h3>original app</h3>
+          <div class="fragment">
+            <a href="https://monopoly-one.com/">monopoly-one.com</a>
+            <img src="./assets/origScreenShot.png" alt="screenshot" />
+          </div>
+        </section>
+        <section>
+          <h3>Description of the app functionality</h3>
+          <img src="./assets/features.png" alt="features" />
+        </section>
+        <section
+          style="
+            height: 100%;
+            background: url(./assets/RACI2.png) no-repeat;
+            background-size: contain;
+            background-position-x: center;
+          "
+        ></section>
+        <section>
+          <h3>communication</h3>
+          <img src="./assets/discord.png" alt="discord" />
+        </section>
+
+        <section>
+          <h3>Kanban board</h3>
+
+          <img src="./assets/kanbanBoard.png" alt="kanbanBoard" />
+        </section>
+        <section>
+          <h3>Code review</h3>
+          <div style="position: relative">
+            <img class="fragment" src="./assets/cr1.png" alt="" />
+            <img
+              class="fragment"
+              src="./assets/cr2.png"
+              alt=""
+              style="position: absolute; left: 40%; top: 10%"
+            />
+          </div>
+        </section>
+        <section>
+          <h3>first problems or fear of not completing the project</h3>
+          <div class="fragment" style="display: flex; justify-content: space-between">
+            <div style="display: flex; flex-direction: column; gap: 20px; width: 26%">
+              <img src="./assets/l1.png" alt="l1" />
+              <span style="color: red">expectations</span>
+            </div>
+            <div
+              class="fragment"
+              style="display: flex; flex-direction: column; gap: 20px; width: 65%"
+            >
+              <div style="display: flex; gap: 20px; height: 100%; justify-content: space-around">
+                <img class="fragment" src="./assets/l2.jpg" alt="l2" />
+                <img class="fragment" src="./assets/l3.jpg" alt="l3" />
+              </div>
+              <span style="color: red">possible results</span>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h3>iterative model</h3>
+          <img src="./assets/lions.jpg" alt="lions" style="transform: scale(1.2)" />
+        </section>
+
+        <section>
+          <h3>Tech stack</h3>
+          <div style="display: flex; justify-content: center; gap: 100px">
+            <ul>
+              Frontend:
+              <li>Typescript</li>
+              <li>SCSS</li>
+              <li>Webpack</li>
+              <li>ESLint</li>
+              <li>Prettier</li>
+            </ul>
+            <ul>
+              Backend:
+              <li>Node.js</li>
+              <li>MySQL</li>
+              <li>Express</li>
+              <li>ws (lib)</li>
+              <li>body-parser (lib)</li>
+              <li>cors (lib)</li>
+            </ul>
+          </div>
+        </section>
+        <section style="height: 100%">
+          <h2>Git insights</h2>
+          <div
+            style="
+              height: 100%;
+              background: url(./assets/ins1.png) no-repeat;
+              background-size: 80%;
+              background-position-x: center;
+            "
+          >
+            <!-- <img src="./assets/ins1.png" alt="insights" style="height: 100%" /> -->
+          </div>
+        </section>
+        <section>...</section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
